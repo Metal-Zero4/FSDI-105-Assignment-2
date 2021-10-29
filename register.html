@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.js">
+    <title>User Registration System</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="users.html">Users</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+    <h1>User Register System</h1>
+    <!--create a form with mail,password, first name, last name, age, address, phone number, payment, color-->
+    <div>
+        <div class="form-container">
+            <input type="text" placeholder="Enter Your Email" id="txtEmail">
+            <input type="password" placeholder="Enter Your Password" id="txtPassword">
+            <input type="text" placeholder="First Name" id="txtFirst">
+            <input type="text" placeholder="Last Name" id="txtLast">
+            <input type="number" id="txtAge" placeholder="Enter Your Age">
+            <input type="text" placeholder="Enter Your Address" id="txtAddress">
+            <input type="tel" placeholder="Enter Your Phone Number" id="txtPhone">
+            <select id="selPayment">
+                <option value="" disabled selected>--Select an option--</option>
+                <option value="paypal">Paypal</option>
+                <option value="check">Check</option>
+                <option value="cash">Cash</option>
+                <option value="videogames">Video Games</option>
+            </select>
+            <input type="color" placeholder="Select Your Favorite Color" id="txtColor">
+            <button id="btn-register">Register</button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="storeManager.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
